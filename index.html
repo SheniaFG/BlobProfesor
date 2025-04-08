@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog de la Profesora</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #f4f6fa;
+      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #004080, #0074d9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 10px 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    button {
+      background-color: #0074d9;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #005bb5;
+      transform: translateY(-2px);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #004080;
+      color: white;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .gallery img {
+      width: calc(33% - 10px);
+      border-radius: 10px;
+    }
+    .social-icons img {
+      width: 36px;
+      margin: 0 10px;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #004080;
+      color: white;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Blog de la Profesora
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#materias">Materias</a></li>
+        <li><a href="#reconocimientos">Reconocimientos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Biografía Personal</h1>
+      <p>Soy profesora en la Universidad Juárez Autónoma de Tabasco con más de 25 años de experiencia en la enseñanza universitaria. A lo largo de mi trayectoria, he impartido asignaturas clave en el área de computación e ingeniería. Mi compromiso con la educación y la tecnología me ha llevado a ser parte de conferencias y talleres sobre tendencias de informática y su aplicación en la industria. Siempre estoy en búsqueda de nuevas metodologías de enseñanza que integren herramientas digitales y sistemas inteligentes para hacer del aprendizaje una experiencia más accesible y eficiente.</p>
+      <img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\SD.jpg" alt="Profesora" style="width:100%; border-radius:10px;" />
+    </section>
+
+    <section id="materias">
+      <h2>Materias Impartidas</h2>
+      <ul>
+        <li>Programación 1</li>
+        <li>Sistemas Distribuidos</li>
+        <li>Bases de Datos</li>
+        <li>Inteligencia Artificial</li>
+        <li>Desarrollo de Software</li>
+        <li>Seguridad Informática</li>
+      </ul>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia Docente</h2>
+      <p>He formado parte de la comunidad académica de la UJAT por más de dos décadas, asesorando a múltiples generaciones de estudiantes en sus proyectos académicos y profesionales. Además de impartir clases, he participado activamente en el desarrollo de contenidos educativos, implementación de tecnologías en el aula y actualización continua mediante talleres y congresos relacionados con la informática y sus aplicaciones en la industria.</p>
+    </section>
+
+    <section id="reconocimientos">
+      <h2>Reconocimientos y Academias</h2>
+      <table>
+        <tr><th>Reconocimiento</th><th>Academia</th></tr>
+        <tr><td>Ejemplo 1</td><td>Ejemplo 2</td></tr>
+      </table>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Laboratorioscomputo.jpg" alt="Laboratorio" />
+        <img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Conferencias.jpg" alt="Conferencia" />
+        <img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Asesorando.jpg" alt="Asesoría" />
+      </div>
+    </section>
+
+    <section id="botones">
+      <h2>Accesos Directos</h2>
+      <button onclick="location.href='clases.html'">📘 Ver más sobre las clases</button>
+      <button onclick="location.href='redes.html'">🌐 Mis redes sociales</button>
+      <button onclick="location.href='https://www.ujat.mx/'" target="_blank">🎓 Visitar UJAT</button>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto y Redes Sociales</h2>
+      <p>Encuéntrame en mis redes para conocer más sobre mi labor docente.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Facebook Logo PNG.jpg" alt="Facebook" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Logo_Insta.jpg" alt="Instagram" /></a>
+        <a href="https://workspace.google.com/intl/es-419/gmail/"><img src="c:\Users\sheni\OneDrive\Escritorio\Blog Profesor\Imagenes\Gmail Logo.jpg" alt="Correo" /></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Blog de la Profesora | Universidad Juárez Autónoma de Tabasco
+  </footer>
+
+</body>
+</html>
